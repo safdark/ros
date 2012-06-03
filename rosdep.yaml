@@ -112,6 +112,9 @@ boost:
     oneiric:
       apt:
         packages: [libboost1.46-all-dev]
+    precise:
+      apt:
+        packages: [libboost1.48-all-dev]
   debian:
     squeeze: libboost1.42-all-dev
     wheezy: libboost-all-dev

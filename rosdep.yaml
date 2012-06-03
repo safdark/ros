@@ -98,19 +98,7 @@ bzip2:
   cygwin: bzip2
   freebsd: bzip2
 boost:
-  ubuntu:
-    lucid:
-      apt:
-        packages: [libboost1.40-all-dev]
-    maverick:
-      apt:
-        packages: [libboost1.42-all-dev]
-    natty:
-      apt:
-        packages: [libboost1.42-all-dev]
-    oneiric:
-      apt:
-        packages: [libboost1.46-all-dev]
+  ubuntu: libboost-all-dev
   debian:
     squeeze: libboost1.42-all-dev
     lenny: |

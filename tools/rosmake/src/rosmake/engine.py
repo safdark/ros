@@ -869,7 +869,7 @@ class RosMakeAll:
             if len(self.rosdep_check_result) == 0:
                 self.printer.print_all( "rosdep check passed all system dependencies in packages")# %s"% packages)
             else:
-                self.printer.print_all("rosdep check failed to find system dependencies: %s"% self.rosdep_check_result)
+                self.printer.print_all("rosdep check failed to find system dependencies: %s"% (self.rosdep_check_result,))
 
         #generate the list of packages necessary to build(in order of dependencies)
         counter = 0

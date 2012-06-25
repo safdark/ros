@@ -45,7 +45,7 @@ def assert_rospack_built():
     output = p.communicate()[0]
     if p.returncode != 0:
         
-        print("Rospack failed to build:", output)
+        print("Rospack failed to build (cmd '%s'):"%' '.join(cmd), output)
         return False
 
     p = subprocess.Popen(["which", "rospack"], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
